@@ -53,17 +53,6 @@ For your first milestone, describe what your project is and how you plan to buil
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
 
-# Starter Project
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RcaV0-HjO3g?si=7L-r6T0KN0yvXpgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-Components: 
-- Some challenges that I faced were the wires and the soldering. The wires had to be cut to a certain length, not too long to dangle everywhere, but not too short as to strain the hit of the console's frame. I made sure to measure and test multiple times before I cut the wires. Additionally, many of the soldering components were very near each other. Therefore, I had to adjust my angle of approach in order to get a good-quality solder without creating a short circuit by connecting two adjacent joints.
-- Next, I will begin my intensive project, which will be the real time planetary tracker. 
-
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
@@ -89,9 +78,20 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino Mega | What the item is used for | $55.00 | <a href="https://www.amazon.com/ARDUINO-MEGA-2560-REV3-A000067/dp/B0046AMGW0"> Link </a> |
+| Elegoo MEGA R3 Board | What the item is used for | $22.99 | <a href="https://www.amazon.com/ELEGOO-ATmega2560-ATMEGA16U2-Arduino-Compliant/dp/B01H4ZDYCE/ref=sr_1_2_sspa?crid=1T53YUJ9OSSYN&dib=eyJ2IjoiMSJ9.r70JjFX8-805Ic29MiqGyIVrIwfR90S-MU_43sZp-KAAVlcNAEOr1T7rwwAVzsvcHYga9dGGK0BXwihyPfPnVkL-oHYhHvR4EqifUFiWe18iVrBPIxtgxLOfTWVFeFkJ_wYOAIF6morxGyUOCkb7Mv03nJ13hyW4g7lgQ0ED57YvOHz6QQxS7sDrnHCocjaue2R8aYYmtOcClzcG0fsbSfkAFyo61HtpQTykT-43P6o.34VkovS5jdwrKuRlvnvXA0BTvsBoZuyzxBxjrIDFRiM&dib_tag=se&keywords=elegoo%2Bcontroller%2Bboard&qid=1750204394&sprefix=elegoo%2Bcontroller%2Bboa%2Caps%2C138&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+
+# Starter Project
+
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RcaV0-HjO3g?si=7L-r6T0KN0yvXpgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+For your first milestone, describe what your project is and how you plan to build it. You can include:
+Components: 
+- Some challenges that I faced were the wires and the soldering. The wires had to be cut to a certain length, not too long to dangle everywhere, but not too short as to strain the hit of the console's frame. I made sure to measure and test multiple times before I cut the wires. Additionally, many of the soldering components were very near each other. Therefore, I had to adjust my angle of approach in order to get a good-quality solder without creating a short circuit by connecting two adjacent joints.
+- Next, I will begin my intensive project, which will be the real time planetary tracker. 
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
