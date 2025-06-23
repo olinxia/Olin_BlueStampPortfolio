@@ -83,6 +83,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 | 2 Micro Servos | Moves to point to a specific planet | $6.99 \(for 2) | <a href="https://www.amazon.com/Sipytoph-Helicopter-Airplane-Walking-Control/dp/B09185SC1W/ref=sr_1_8?crid=EG34UOQG1ZTB&keywords=micro+servo+sg90&qid=1689876515&sprefix=micro+servo+sg%2Caps%2C410&sr=8-8"> Link </a> |
 | Laser Diode | Points to planets | $6.79 \(for 10) | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | GT-U7 GPS Module | Provides the location and time | $18.99 | <a href="https://www.amazon.com/Navigation-Positioning-Sensitivity-Consumption-High-Precision/dp/B08MZ2CBP7/ref=sr_1_3?crid=EUNF72IZZWV6&keywords=gt-u7&qid=1689876233&sprefix=gt-u%2Caps%2C606&sr=8-3"> Link </a> |
+| Button | Switches between tracking and trajectory mode | $5.99 \(for 120) | <a href="https://www.amazon.com/dp/B07VSNN9S2?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_MSFKE4VWKZJ5XJ9NN4HA_2"> Link </a> |
+| SparkFun 9DoF IMU | Detects compass orientation and adjusts the servos accordingly | $19.95 | <a href="https://www.amazon.com/SparkFun-Breakout-ICM-20948-connection-Accelerometer-Magnetometer/dp/B07VNV3WKL/ref=sr_1_1?crid=1LGYJ3JV9LD70&dib=eyJ2IjoiMSJ9.34764cQ6p-jmLkr3GhwuUft2p42-bwaCQWvtW6GQKp0PtXP2jO3QcJjJjhMM_Wgxb3FDngdMkItrhQREMDplIzq8zrsY7p6J7c_TNlW4_zJIH3diYQoDOrdX146CmsYYGPJw352zWbWPPhyTuUuMXil8arsazfTfrbRdjwiAyXn0g3rrfPkfHIG8hB0u39PpkniX-LKQ6Jbo-USjqMWSBiGwTzGhiWaBGIg6nYvF5Vd9MFDr9UgW0stDiTzraU6z.P1sUR-HRp05hkjn9ld2r5K4xRAj7EfXCN2LaUlHcKQA&dib_tag=se&keywords=sparkfun+imu&qid=1750692938&s=industrial&sprefix=sparkfun+i%2Cindustrial%2C324&sr=1-1"> Link </a> |
 
 # Starter Project
 
