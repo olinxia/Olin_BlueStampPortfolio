@@ -1,12 +1,6 @@
 # Real Time Planetary Tracker
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Olin X | The College Preparatory School | Aerospace Engineering | Incoming Junior
@@ -50,13 +44,13 @@ For your second milestone, explain what you've worked on since your previous mil
 My project, the real time planet tracker, will be able to track all the planets in the solar system and show me where they are in the sky. There are many components that have to work together to make my project work. Here is a quick summary:
   - Arduino board: stores all the code and communicates with all the other parts
   - GPS Module: records the time and location for the Arduino board to incorporate in its calculations
-
+  - 
 
 ### Progress
-For my first milestone, I focused on building the wiring so that all the hardware is connected. 
+For my first milestone, I focused on building the wiring so that all the hardware is connected. I also made sure that they worked by connecting the Arduino board to my computer and seeing that the lights of the parts that had them were on.
 
 ### Challenges
-The main problem that I faced was learning how to connect the pins together. Each component 
+The main problem that I faced was learning how to connect the pins together. Each component needed multiple connections to various other parts. I learned about where they needed to go and why.
 
 ### Next Steps
 With the wiring finished, I can move on to the software for my project, which will use mathematical calculations and astronomical data to determine where in the celestial sphere are the planets. Then, the servos will move to the 
@@ -113,6 +107,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 ### Schematic
 <img src="retroschematic.jpg" width="600" height="500">
 
+<!--
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
@@ -120,3 +115,4 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.
+-->
