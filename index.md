@@ -56,7 +56,7 @@ My project, the real time planet tracker, will be able to track all the planets 
 For my first milestone, I focused on building the wiring so that all the hardware is connected. I also made sure that they worked by connecting the Arduino board to my computer and seeing that the lights of the parts that had them were on.
 
 ### Challenges
-The main problem that I faced was learning how to connect the pins together. Each component needed multiple connections to various other parts. I learned about where they needed to go and why.
+The main problem that I faced was learning how to connect the pins together. Each component needed multiple connections to various other parts. I learned about where they needed to go and why. For example, in order for the GPS to communicate with my Arduino board, information must flow both ways. Therefore, the transmitter port of one must be connected to the receiving port of the other, and vice versa.
 
 ### Next Steps
 With the wiring finished, I can move on to the software for my project, which will use mathematical calculations and astronomical data to determine where in the celestial sphere are the planets. Then, the servos will move to the appropriate location.
