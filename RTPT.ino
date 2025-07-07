@@ -347,105 +347,91 @@ void calculate(double *array, double futureOffsetHours, double LST, int seconds)
  double T = TT / 36525.0;
 
  // Moon
- if (planet == 10) {
-   double D = radians(fmod(297.8501921 + 445267.1114034 * T
-     - 0.0018819 * T * T + T * T * T / 545868 - T * T * T * T / 113065000, 360.0));
-   double M_sun = radians(fmod(357.5291092 + 35999.0502909 * T
-     - 0.0001536 * T * T + T * T * T / 24490000, 360.0));
-   double M_moon = radians(fmod(134.9633964 + 477198.8675055 * T
-     + 0.0087414 * T * T + T * T * T / 69699 - T * T * T * T / 14712000, 360.0));
-   double F = radians(fmod(93.2720950 + 483202.0175233 * T
-     - 0.0036539 * T * T - T * T * T / 3526000 + T * T * T * T / 863310000, 360.0));
+if (planet == 10) {
+  double D = radians(fmod(297.8501921 + 445267.1114034 * T
+    - 0.0018819 * T * T + T * T * T / 545868 - T * T * T * T / 113065000, 360.0));
+  double M_sun = radians(fmod(357.5291092 + 35999.0502909 * T
+    - 0.0001536 * T * T + T * T * T / 24490000, 360.0));
+  double M_moon = radians(fmod(134.9633964 + 477198.8675055 * T
+    + 0.0087414 * T * T + T * T * T / 69699 - T * T * T * T / 14712000, 360.0));
+  double F = radians(fmod(93.2720950 + 483202.0175233 * T
+    - 0.0036539 * T * T - T * T * T / 3526000 + T * T * T * T / 863310000, 360.0));
 
-   double lon = 218.3164591
-     + 481267.88134236 * T
-     + 6.289 * sin(M_moon)
-     - 1.274 * sin(2*D - M_moon)
-     + 0.658 * sin(2*D)
-     - 0.214 * sin(2*M_moon)
-     - 0.11 * sin(D);
-   lon = fmod(lon, 360.0);
+  double lon = 218.3164591
+    + 481267.88134236 * T
+    + 6.289 * sin(M_moon)
+    - 1.274 * sin(2*D - M_moon)
+    + 0.658 * sin(2*D)
+    - 0.214 * sin(2*M_moon)
+    - 0.11 * sin(D);
+  lon = fmod(lon, 360.0);
 
-   double lat_moon = 5.128 * sin(F)
-     + 0.28 * sin(M_moon + F)
-     - 0.28 * sin(F - M_moon)
-     - 0.17 * sin(F - 2*D);
+  double lat_moon = 5.128 * sin(F)
+    + 0.28 * sin(M_moon + F)
+    - 0.28 * sin(F - M_moon)
+    - 0.17 * sin(F - 2*D);
 
-   double dist = 60.36298
-     - 3.27746 * cos(M_moon)
-     - 0.57994 * cos(2*D - M_moon)
-     - 0.46357 * cos(2*D)
-     + 0.08904 * cos(2*M_moon);
+  double dist = 60.36298
+    - 3.27746 * cos(M_moon)
+    - 0.57994 * cos(2*D - M_moon)
+    - 0.46357 * cos(2*D)
+    + 0.08904 * cos(2*M_moon);
 
-   double dist_au = dist * 0.000042635;
+  double dist_au = dist * 0.000042635;
 
-   double lon_rad = radians(lon);
-   double lat_rad = radians(lat_moon);
-   double x = dist_au * cos(lat_rad) * cos(lon_rad);
-   double y = dist_au * cos(lat_rad) * sin(lon_rad);
-   double z = dist_au * sin(lat_rad);
+  double lon_rad = radians(lon);
+  double lat_rad = radians(lat_moon);
+  double x = dist_au * cos(lat_rad) * cos(lon_rad);
+  double y = dist_au * cos(lat_rad) * sin(lon_rad);
+  double z = dist_au * sin(lat_rad);
 
-   double ec = radians(23.439292);
-   double Xq = x;
-   double Yq = y * cos(ec) - z * sin(ec);
-   double Zq = y * sin(ec) + z * cos(ec);
+  double ec = radians(23.439292);
+  double Xq = x;
+  double Yq = y * cos(ec) - z * sin(ec);
+  double Zq = y * sin(ec) + z * cos(ec);
 
-   double alpha = atan2(Yq, Xq);
-   if (alpha < 0) alpha += TWO_PI;
-   double delta = atan2(Zq, sqrt(Xq*Xq + Yq*Yq));
-   double distance = sqrt(Xq*Xq + Yq*Yq + Zq*Zq);
+  double alpha = atan2(Yq, Xq);
+  if (alpha < 0) alpha += TWO_PI;
+  double delta = atan2(Zq, sqrt(Xq*Xq + Yq*Yq));
+  double distance = sqrt(Xq*Xq + Yq*Yq + Zq*Zq);
 
-   array[0] = degrees(alpha) / 15.0;
-   array[1] = degrees(delta);
-   array[2] = distance;
+  array[0] = degrees(alpha) / 15.0;
+  array[1] = degrees(delta);
+  array[2] = distance;
 
-   goto horizontal;
- }
+  // ─── Horizontal Conversion ───
+  double HA = fmod(LST - alpha + TWO_PI, TWO_PI);
+  double x_hor = cos(HA) * cos(delta);
+  double y_hor = sin(HA) * cos(delta);
+  double z_hor = sin(delta);
 
- // ────────────────────────────────────────────────────
- // Dwarf planets via PROGMEM tables + linear interpolation
- // ────────────────────────────────────────────────────
- if (planet >= 11 && planet <= 14) {
-   // 1) how many days have elapsed since the table start?
-   double daysSinceStart = (double)(unixTime - dwarf_start_unix) / 86400.0;
-   double rawIndex      = daysSinceStart / dwarf_step_days;
-   int    i0            = constrain(int(floor(rawIndex)), 0, ceres_num_records - 2);
-   int    i1            = i0 + 1;
-   float  frac          = rawIndex - i0;
+  double xhor = x_hor * sin(radians(lat)) - z_hor * cos(radians(lat));
+  double yhor = y_hor;
+  double zhor = x_hor * cos(radians(lat)) + z_hor * sin(radians(lat));
 
-   // 2) pick the right table pointers
-   const float *raTable, *decTable, *distTable;
-   switch (planet) {
-     case 11: raTable = ceres_ra_deg;   decTable = ceres_dec_deg;   distTable = ceres_dist_au;   break;
-     case 12: raTable = haumea_ra_deg;  decTable = haumea_dec_deg;  distTable = haumea_dist_au;  break;
-     case 13: raTable = makemake_ra_deg;decTable = makemake_dec_deg;distTable = makemake_dist_au;break;
-     case 14: raTable = eris_ra_deg;    decTable = eris_dec_deg;    distTable = eris_dist_au;    break;
-   }
+  double az = atan2(yhor, xhor);
+  az = degrees(az);
+  az = fmod(az + 180.0, 360.0);  // Azimuth normalization
+  double alt = -degrees(asin(zhor));
 
-   // 3) read & interpolate via pgm_read_float_near()
-   float ra0  = pgm_read_float_near(&raTable[i0]);
-   float ra1  = pgm_read_float_near(&raTable[i1]);
-   float dec0 = pgm_read_float_near(&decTable[i0]);
-   float dec1 = pgm_read_float_near(&decTable[i1]);
-   float d0   = pgm_read_float_near(&distTable[i0]);
-   float d1   = pgm_read_float_near(&distTable[i1]);
+  float servoAz = fmod((az - headingOffset + 360.0), 360.0);
+  float panPulse = PAN_MIN_PULSE + (servoAz / 360.0) * (PAN_MAX_PULSE - PAN_MIN_PULSE);
+  panPulse = constrain(panPulse, PAN_MIN_PULSE, PAN_MAX_PULSE);
 
-   float ra_deg   = ra0   + frac * (ra1   - ra0);
-   float dec_deg  = dec0  + frac * (dec1  - dec0);
-   float dist_au  = d0    + frac * (d1    - d0);
+  float tiltPulse = TILT_MIN_PULSE + ((90.0 - alt) / 180.0) * (TILT_MAX_PULSE - TILT_MIN_PULSE);
+  tiltPulse = constrain(tiltPulse, TILT_MIN_PULSE, TILT_MAX_PULSE);
 
-   // 4) store into your array (RA in hours)
-   array[0] = ra_deg / 15.0;
-   array[1] = dec_deg;
-   array[2] = dist_au;
+  tiltAngle = ((tiltPulse - TILT_MIN_PULSE) / (TILT_MAX_PULSE - TILT_MIN_PULSE)) * 180.0 - 90.0;
 
-   // convert back to radians for the horizontal section:
-   double alpha = radians(ra_deg);
-   double delta = radians(dec_deg);
+  pwm.writeMicroseconds(PAN_CHANNEL, panPulse);
+  pwm.writeMicroseconds(TILT_CHANNEL, tiltPulse);
+  digitalWrite(13, HIGH);
 
-   // jump straight to your horizontal‑coordinates code:
-   goto horizontalDwarf;
- }
+  lastAzimuth = az;
+  lastServoAz = servoAz;
+
+  return;  // Done with Moon
+}
 
  // Classical planets
  double a[] = {0,0.387098,0.723330,1.000000,1.523688,5.20260,9.55491,19.2184,30.1104,39.4821};
@@ -480,10 +466,32 @@ void calculate(double *array, double futureOffsetHours, double LST, int seconds)
  double y = r*(sin(o_rad)*cos(v_plus_w)+cos(o_rad)*sin(v_plus_w)*cos(i_rad));
  double z = r*sin(v_plus_w)*sin(i_rad);
 
- double ec = radians(23.439292);
- double Xq = x;
- double Yq = y*cos(ec)-z*sin(ec);
- double Zq = y*sin(ec)+z*cos(ec);
+// --- Compute Earth's heliocentric position ---
+double ME = radians(fmod(L[3] - Pi[3] + 360.0, 360.0));
+double eE = e[3];
+double vE = ME + (2 * eE - 0.25 * pow(eE, 3)) * sin(ME)
+                + (1.25 * pow(eE, 2)) * sin(2 * ME)
+                + ((13.0 / 12.0) * pow(eE, 3)) * sin(3 * ME);
+double rE = a[3] * (1 - eE * eE) / (1 + eE * cos(vE));
+
+double iE = radians(i[3]);
+double oE = radians(Omega[3]);
+double wE = radians(Pi[3] - Omega[3]);
+double vE_plus_w = vE + wE;
+
+double xE = rE * (cos(oE) * cos(vE_plus_w) - sin(oE) * sin(vE_plus_w) * cos(iE));
+double yE = rE * (sin(oE) * cos(vE_plus_w) + cos(oE) * sin(vE_plus_w) * cos(iE));
+double zE = rE * sin(vE_plus_w) * sin(iE);
+
+// Subtract Earth's position to get geocentric coordinates
+double xg = x - xE;
+double yg = y - yE;
+double zg = z - zE;
+
+  double ec = radians(23.439292);
+  double Xq = xg;
+  double Yq = yg * cos(ec) - zg * sin(ec);
+  double Zq = yg * sin(ec) + zg * cos(ec);
 
  double alpha = atan2(Yq,Xq);
  if (alpha<0) alpha+=TWO_PI;
@@ -497,7 +505,7 @@ void calculate(double *array, double futureOffsetHours, double LST, int seconds)
  horizontal:
  // Horizontal computation (Moon and planets)
  ;
- horizontalDwarf:
+
  // Compute horizontal coordinates
  double HA = fmod(LST - alpha + TWO_PI,TWO_PI);
  double x_hor = cos(HA)*cos(delta);
@@ -529,3 +537,4 @@ void calculate(double *array, double futureOffsetHours, double LST, int seconds)
  lastAzimuth=az;
  lastServoAz=servoAz;
 }
+
