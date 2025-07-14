@@ -10,6 +10,8 @@ My project is the real time planet tracker, which uses a laser connected to a se
   
 # Additional Modifications
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rmb-5CQay6I?si=cS7Bu7h3ZsFfuypu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 After finishing my third milestone, I continued to make additions to improve my project. After having the laser on for a very long time while testing my code, its power has decreased over time. I replaced it with a new one, and to prevent the issue of it dimming due to overuse, I added a switch so I can turn it off and on when I want to. The laser works independently of the servos, so even if the laser is off, the servos are unaffected. Additionally, I hot glued a compass to my box, and I have a separate arrow on a piece of tape. Instead of relying on an IMU to read compass heading and pass it off to the Arduino to use in its calculations, all I have to do is make sure that the red arrow pointing north on the compass points in the same direction as the other arrow.
 
 # Final Milestone
