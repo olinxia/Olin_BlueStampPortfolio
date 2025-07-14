@@ -10,7 +10,7 @@ My project is the real time planet tracker, which uses a laser connected to a se
   
 # Afterword
 
-After finishing my third milestone, I continued to make additions to improve my project. After having the laser on for a very long time while testing my code, its power has decreased over time. I replaced it with a new one, and to prevent the issue of it dimming due to overuse, I added a switch so I can turn it off and on when I want to. The laser works independently of the servos, so even if the laser is off, the servos are unaffected.
+After finishing my third milestone, I continued to make additions to improve my project. After having the laser on for a very long time while testing my code, its power has decreased over time. I replaced it with a new one, and to prevent the issue of it dimming due to overuse, I added a switch so I can turn it off and on when I want to. The laser works independently of the servos, so even if the laser is off, the servos are unaffected. Additionally, I hot glued a compass to my box, and I have a separate arrow on a piece of tape. Instead of relying on an IMU to read compass heading and pass it off to the Arduino to use in its calculations, all I have to do is make sure that the red arrow pointing north on the compass points in the same direction as the other arrow.
 
 # Final Milestone
 
@@ -28,11 +28,11 @@ I faced another challenge when I used Onshape to construct a box for my project 
 
 After removing my IMU (inertial measurement unit) for my second milestone since its compass readings were inaccurate, I wanted to see if I could get my IMU to properly function. I found out that IMUs typically do not work without prior calibration, so I made a separate Python file to calculate the hard iron (caused by magnetized objects near the IMU) and soft iron (caused by magnetizable objects near the IMU) offsets. The IMU would then take these inputted offsets into account to accurately calculate compass heading. However, after numerous failed attempts, my accuracy was not noticeably improving, so I had to stop trying to make it work and pivot to other things. My tracker could still function without the IMU, and I had to extensively verify that the calculation code was properly functioning and use CAD to build my box. If I had more time, I would return to the IMU and try to get it to work.
 
-For your final milestone, explain the outcome of your project. Key details to include are:
+<!-- For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE -->
 
 
 
