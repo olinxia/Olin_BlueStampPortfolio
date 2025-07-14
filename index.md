@@ -40,16 +40,16 @@ After removing my IMU (inertial measurement unit) for my second milestone since 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sy0oKP475To?si=CrjRI9YCKGZvWPwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Progress
-
+For the second milestone, I worked on the code which will make my servos move to the correct positions. However, I made an important hardware upgrade, which is that I replaced my servo system with a completely new one. The problem with the old setup was that the old servos could only rotate 180°, which is fine for the tilt servo, but insufficient for the pan servo, which needs to turn 360°. Hence, I obtained a servo which can turn almost 8 times over. Its capabilities are 
 
 ### Challenges
 For the second milestone, I faced many different challenges, one of which was my 
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
+<!-- For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+- What needs to be completed before your final milestone -->
 
 # First Milestone
 
@@ -57,14 +57,14 @@ For your second milestone, explain what you've worked on since your previous mil
 
 ### Summary
 My project, the real time planet tracker, will be able to track all the planets in the solar system and show me where they are in the sky. There are many components that have to work together to make my project work. Here is a quick summary:
-  - Arduino board: stores all the code and communicates with all the other parts
-  - Servos: a set of two which point at the direction that the Arduino board tells them to go to
-  - GPS Module: records the time and location for the Arduino board to incorporate in its calculations
-  - Breadboard: connects the wires together
-  - IMU (Inertial Measurement Unit): Records orientation and sends that information to the Arduino so that the servos 
-  - Potentiometer: Can be adjusted to switch between what planet is being tracked or track a planet's future and past location
-  - Button: Toggles between the two modes of my planet tracker, tracking mode and trajectory mode
-  - Laser: Connects to the servos so that when they move, it does too
+Arduino board: stores all the code and communicates with all the other parts
+Servos: a set of two which point at the direction that the Arduino board tells them to go to
+GPS Module: records the time and location for the Arduino board to incorporate in its calculations
+Breadboard: connects the wires together
+IMU (Inertial Measurement Unit): Records orientation and sends that information to the Arduino so that the servos 
+Potentiometer: Can be adjusted to switch between what planet is being tracked or track a planet's future and past location
+Button: Toggles between the two modes of my planet tracker, tracking mode and trajectory mode
+Laser: Connects to the servos so that when they move, it does too
 
 ### Progress
 For my first milestone, I focused on building the wiring so that all the hardware is connected. I also made sure that they worked by connecting the Arduino board to my computer and seeing that the lights of the parts that had them were on.
