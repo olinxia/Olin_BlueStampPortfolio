@@ -42,7 +42,7 @@ After removing my IMU (inertial measurement unit) for my second milestone since 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sy0oKP475To?si=CrjRI9YCKGZvWPwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Progress
-For the second milestone, I worked on the code which will make my servos move to the correct positions. However, I made an important hardware upgrade, which is that I replaced my servo system with a completely new one. The problem with the old setup was that the old servos could only rotate 180°, which is fine for the tilt servo, but insufficient for the pan servo, which needs to turn 360°. Hence, I obtained a servo which can turn almost 8 times over. Its capabilities are 
+For the second milestone, I worked on the code which will make my servos move to the correct positions. However, I made an important hardware upgrade, which is that I replaced my servo system with a completely new one. The problem with the old setup was that the old servos could only rotate 180°, which is fine for the tilt servo, but insufficient for the pan servo, which needs to turn 360°. Hence, I obtained a servo which can turn almost 8 times over. Its capabilities are actually too extensive, which meant that I had to limit the pulse ranges of my pan servo manually in my code to ensure that the servo is limited to a 360° range.
 
 ### Challenges
 For the second milestone, I faced many different challenges, one of which was my 
