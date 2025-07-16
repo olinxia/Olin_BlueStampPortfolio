@@ -33,10 +33,12 @@ I faced another challenge when I used Onshape to construct a box for my project 
 
 After removing my IMU (inertial measurement unit) for my second milestone since its compass readings were inaccurate, I wanted to see if I could get my IMU to properly function. I found out that IMUs typically do not work without prior calibration, so I made a separate Python file to calculate the hard iron (caused by magnetized objects near the IMU) and soft iron (caused by magnetizable objects near the IMU) offsets. The IMU would then take these inputted offsets into account to accurately calculate compass heading. However, after numerous failed attempts, my accuracy was not noticeably improving, so I had to stop trying to make it work and pivot to other things. My tracker could still function without the IMU, and I had to extensively verify that the calculation code was properly functioning and use CAD to build my box. If I had more time, I would return to the IMU and try to get it to work.
 
-### What did I learn?
-At Blue Stamp, 
+### What I Learned From This Project
+At Blue Stamp, the three main things that I learned while building this project were how how electronic components are wired to connect with each other, how information and computation works with microcontrollers regarding orbital mechanics, and I learned how 3D printing software works.
 
 ### Next Steps
+Even after my time at BlueStamp ends, I still want to continue improving my project. I want to add a back wall for my 3D printed box, a switch for my laser so that I can turn it off when I want to, and a short 3D printed tripod with rubber feet to prevent sliding. Moreover, I want to revisit the IMU so that it can accurately compute compass heading.
+
 <!-- For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
@@ -91,8 +93,8 @@ With the wiring finished, I can move on to the software for my project, which wi
 
 
 
-# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+# Schematic 
+<img src="Olin_Planet_Tracker_Schematic_bb.png" width="1000" height="800">  
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
