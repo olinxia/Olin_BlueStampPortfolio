@@ -750,7 +750,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 <img src="retroimg.png" width="300" height="400">
 
-### Components
+### Challenges
 
 Some challenges that I faced were the wires and the soldering. The wires had to be cut to a certain length, not too long to dangle everywhere, but not too short as to strain the hit of the console's frame. I made sure to measure and test multiple times before I cut the wires. Additionally, many of the soldering components were very near each other. Therefore, I had to adjust my angle of approach in order to get a good-quality solder without creating a short circuit by connecting two adjacent joints. Next, I will begin my intensive project, which will be the real time planetary tracker.
 
