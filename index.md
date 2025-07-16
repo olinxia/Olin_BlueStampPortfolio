@@ -7,6 +7,7 @@ My project is the real time planet tracker, which uses a laser connected to a se
 | Olin X | The College Preparatory School | Aerospace Engineering | Incoming Junior
 
 <img src="OlinX.png" width="300" height="400">
+<img src="OlinXFinal.png" width="300" height="400">
   
 # Additional Modifications
 
