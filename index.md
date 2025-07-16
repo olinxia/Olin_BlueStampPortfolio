@@ -744,7 +744,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Button | Switches between tracking and trajectory mode | $7.28 \(for 10) | <a href="https://www.amazon.com/uxcell-12x12x8mm-Momentary-Tactile-Button/dp/B07HBQFJ1W/ref=sr_1_7?crid=1X7TFPYURXRHV&dib=eyJ2IjoiMSJ9.PNWLG9o609D8oXdYBHsXFgiEOX3LBWKI2iaA5tyUEKX6A0hHrN2Cq6vAlKID-tXq0ie7hX5vajAYawyS2zZ3g56sQxCXnmWqhua9CwuO_SsjcVxJ4FijQ_T5HL3sncOQ01bL0RTFXPetZ9qX0-q5osuXo6BhPkf8fsxAwixwJQuksZd4RZGiiKnGeIE4PviZPN4_g7gH-CIv8qPsoJaY1wsbmIkiECSeLbcPZfecMpo.rh6p9w2fgW4PMCpEeECCD0L26VFsT8UVY2e1_xZzvUk&dib_tag=se&keywords=adafruit+tactile+button+12+x+8&qid=1752534816&sprefix=adafruit+tactile+buttom+12+x+8%2Caps%2C142&sr=8-7"> Link </a> |
 | Switch | Turns the laser on and off | $6.11 \(for 70) | <a href="https://www.amazon.com/Switch-SPDT-Micro-Breadboard-GuuYebe/dp/B0CRTPY88B/ref=sr_1_5?crid=KXTQP07LSLNX&dib=eyJ2IjoiMSJ9.5H_xJYLVXujiydyTUDaNnc0_j8fyyCWC53xPKlJtKHYzWS1fOl1YhtgQ-VIPRDNWK9-SKAllkGIZtucdDb2CP24lr49Pp5hREmLRfFmX1rT7649kzMTDpvjpQk5hMwgAJMxmfgD_VOa_6bGY6hQG7kfA-dPyVeZ4weRNrPpSnHnMMzVlrC9mnJhrMWJKe-OzQUi6beDntk6cD8tAgLuLBOgZEvRD04_nytzEJMUs-go.geo34SLl2YaIiWYsD-vllHFIXbJKJgRc-2RWag0m3lo&dib_tag=se&keywords=small+electronic+switch+toggle+for+arduino&qid=1752537215&sprefix=small+electronic+switch+toggle+for+arduino%2Caps%2C114&sr=8-5"> Link </a> |
 
-# Starter Project
+# Starter Project: Retro Arcade Console
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RcaV0-HjO3g?si=7L-r6T0KN0yvXpgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
