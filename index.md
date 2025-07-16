@@ -1,6 +1,6 @@
-# Real Time Planetary Tracker
-<!-- Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails! -->
-My project is the real time planet tracker, which uses a laser connected to a servo system to point to the planet of my choice. To build this project, I had to assemble a complicated wiring and hardware set, but the hardest part by far of this project was the software. Because the motion of objects in space is far from simple, I had to use comprehensive astronomical data and combine that with many mathematical calculations to produce an accurate result.
+# Celestial Object Tracker
+
+My project is the celestial object tracker, which uses a laser connected to a servo system to point to a celestial object of my choice, which includes the other planets, the moon, and a few dwarf planets too. To build this project, I had to assemble a complicated wiring and hardware set, but the hardest part by far of this project was the software. Because the motion of objects in space is far from simple, I had to use comprehensive astronomical data and combine that with many mathematical calculations to produce an accurate result.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
