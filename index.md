@@ -1,5 +1,7 @@
 # Celestial Object Tracker
 
+<!-- I renamed my project from the real time planet tracker to celestial object tracker because with what I did with my project, adding a function to track the future and the past as well as adding objects that weren't planets, the name had to update accordingly. -->
+
 My project is the celestial object tracker, which uses a laser connected to a servo system to point to a celestial object of my choice, which includes the other planets, the moon, and a few dwarf planets too. To build this project, I had to assemble a complicated wiring and hardware set, but the hardest part by far of this project was the software. Because the motion of objects in space is far from simple, I had to use comprehensive astronomical data and combine that with many mathematical calculations to produce an accurate result.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
