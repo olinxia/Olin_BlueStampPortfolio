@@ -94,8 +94,8 @@ With the wiring finished, I can move on to the software for my project, which wi
 
 
 # Schematics 
-<img src="Olin_Planet_Tracker_Schematic_bb.png" width="1000" height="800">  
-<a href="https://cad.onshape.com/documents/30d2df1b85668cdd8d71f19b/w/168cc0960c0f73e244844366/e/6bd2b577e7599c47cd42dd4a?renderMode=0&uiState=6878b0ce3635ea45092d49a4"> Onshape CAD </a> 
+<img src="Olin_Planet_Tracker_Schematic_bb.png" width="750" height="600">  
+Here is the link to my <a href="https://cad.onshape.com/documents/30d2df1b85668cdd8d71f19b/w/168cc0960c0f73e244844366/e/6bd2b577e7599c47cd42dd4a?renderMode=0&uiState=6878b0ce3635ea45092d49a4">Onshape CAD</a>. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
